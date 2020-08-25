@@ -11,7 +11,7 @@ const Bio = (props) => {
 };
 
 Bio.defaultProps = {
-  job:
+  bio:
     "My name is Amine Kacem i am 27 years old and i wanna be a web developer.",
 };
 

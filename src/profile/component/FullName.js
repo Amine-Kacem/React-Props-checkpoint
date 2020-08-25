@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const FullName = (props) => {
   console.log(props);
@@ -8,5 +9,11 @@ const FullName = (props) => {
     </div>
   );
 };
+FullName.defaultProps = {
+  name: "Amine Kacem",
+};
 
+FullName.propTypes = {
+  name: PropTypes.string,
+};
 export default FullName;

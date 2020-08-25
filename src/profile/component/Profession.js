@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Profession = (props) => {
   console.log(props);
@@ -8,6 +9,14 @@ const Profession = (props) => {
       {props.children}
     </div>
   );
+};
+
+Profession.defaultProps = {
+  job: "web developer",
+};
+
+Profession.propTypes = {
+  job: PropTypes.string,
 };
 
 export default Profession;
